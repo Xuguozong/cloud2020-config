@@ -21,7 +21,7 @@ eureka:
       # 集群模式
       # defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   instance:
-    instance-id: payment
+    instance-id: payment-shit
     ## 访问路径显示 ip 地址
     prefer-ip-address: true
     ## 心跳检测与续约时间
