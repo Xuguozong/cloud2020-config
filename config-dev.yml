@@ -1,35 +1,5 @@
-spring:
-  application:
-    name: cloud-payment-service-refresh-all-notall
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.91.149:3306/cloud2020?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: 123456
-  cloud:
-    discovery:
-      enabled: true
-
-eureka:
-  client:
-    register-with-eureka: true
-    fetchRegistry: true
-    service-url:
-      # 单机模式
-      defaultZone: http://eureka7001.com:7001/eureka
-      # 集群模式
-      # defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
-  instance:
-    instance-id: payment-shit
-    ## 访问路径显示 ip 地址
-    prefer-ip-address: true
-    ## 心跳检测与续约时间
-    ## 开发是设置小些，保证服务关闭后注册中心能及时剔除服务
-    ### Eureka 客户端向服务端发送心跳的时间间隔
-    lease-renewal-interval-in-seconds: 1
-    ## Eureka 服务端在接收到最后一次心跳后等待的时间上限，默认90秒，超时将剔除服务
-    lease-expiration-duration-in-seconds: 2
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.work.common.entity
+lord:
+  name: xuguozong
