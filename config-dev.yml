@@ -2,4 +2,4 @@ mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.work.common.entity
 lord:
-  name: xuguozong
+  name: shit
