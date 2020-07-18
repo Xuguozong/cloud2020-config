@@ -1,6 +1,6 @@
 spring:
   application:
-    name: cloud-payment-service-refresh-all
+    name: cloud-payment-service-refresh-all-notall
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
